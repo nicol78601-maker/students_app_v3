@@ -19,3 +19,5 @@ def test_sav_1_add_student_underage_fail(mock_add_student):
     with pytest.raises(ServiceAppLogicError) as excinfo:
         add_student(invalid_student)
     assert "Student age is out of range" in str(excinfo.value)
+
+# push 3
