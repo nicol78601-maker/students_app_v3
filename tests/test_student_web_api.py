@@ -73,3 +73,5 @@ def test_delete_student():
 
         response = requests.delete(f"{BASE_URL}/students/{student_id}")
         assert response.status_code == 204
+
+        # עדכון
